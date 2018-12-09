@@ -7,6 +7,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("input", type=str, help="Path to an input directory containing dirs of extracted articles")
 parser.add_argument("-o", "--output", type=str, help="Path to an output directory or a single file")
 parser.add_argument("-m", "--merge", action="store_true", help="Whether to merge all files in a single txt file")
+parser.add_argument("-w", "--min-nb-words", type=int, default=1, help="Min number of words in a sentence")
 
 
 def normalize(text):
@@ -41,7 +42,7 @@ def clean_corpus(args):
                     if not line:
                         continue
                     line = normalize(line)
-                    if not line:
+                    if not line or line.count(' ') + 1 < args.min_nb_words:
                         continue
                     output_file.write(line + '\n')
             if not args.merge:
