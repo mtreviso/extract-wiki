@@ -29,9 +29,9 @@ A astronomia é uma das mais antigas ciências.
 
 ## Install
 
-Clone this repo. 
+Clone this repo:
 ```bash
-git clone https://github.com/mtreviso/extractwiki.git
+git clone https://github.com/mtreviso/extract-wiki.git
 ```
 
 Automatically create a Python virtualenv and install all dependencies 
@@ -42,7 +42,7 @@ pipenv install
 pipenv shell
 ```
 
-If it is taking too long to install all dependencies, add `--skip-lock` flag for `pipenv install`.
+If it is taking too long to install all dependencies, add `--skip-lock` flag to `pipenv install`.
 
 
 ## Steps
