@@ -34,7 +34,7 @@ Clone this repo:
 git clone https://github.com/mtreviso/extract-wiki.git
 ```
 
-Install the only dependency (`selectolax`), which is used to safely strip HTML tagsy:
+Install the only dependency (`selectolax`), which is used to safely strip remaining HTML tags:
 ```
 pip install selectolax
 ```
@@ -42,7 +42,7 @@ pip install selectolax
 
 ## Usage
 
-Just run `clean_corpus.py` script by following these steps:
+Run `clean_corpus.py` script by following these steps:
 
 1. Download wiki dump:
 
@@ -72,7 +72,6 @@ Just run `clean_corpus.py` script by following these steps:
     ```bash
     python3 clean_corpus.py ptwiki-in-parts/ -o ptwiki-in-parts-cleaned/
     ```
-
 
 
 ## Args
