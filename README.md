@@ -34,18 +34,15 @@ Clone this repo:
 git clone https://github.com/mtreviso/extract-wiki.git
 ```
 
-Automatically create a Python virtualenv and install all dependencies 
-using `pipenv install`. And then activate the virtualenv with `pipenv shell`:
-```sh
-pip install pipenv
-pipenv install
-pipenv shell
+Install the only dependency (`selectolax`), which is used to safely strip HTML tagsy:
+```
+pip install selectolax
 ```
 
-If it is taking too long to install all dependencies, add `--skip-lock` flag to `pipenv install`.
 
+## Usage
 
-## Steps
+Just run `clean_corpus.py` script by following these steps:
 
 1. Download wiki dump:
 
